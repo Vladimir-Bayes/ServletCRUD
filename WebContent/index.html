@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加新员工</title>
+</head>
+<body>
+    <h1>添加新员工</h1>
+    <form action="SaveServlet" method="post">
+        <table>
+            <tr>
+                <td>姓名:</td>
+                <td><input type="text" name="name" /></td>
+            </tr>
+            <tr>
+                <td>年龄:</td>
+                <td><input type="text" name="age" /></td>
+            </tr>
+
+            <tr>
+                <td>学历:</td>
+                <td><select name="education" style="width: 150px">
+                        <option value="专科">专科</option>
+                        <option value="本科">本科</option>
+                        <option value="研究生">研究生</option>
+                        <option value="博士">博士</option>
+                        <option value="其它">其它</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>地址:</td>
+                <td><input type="text" name="address" /></td>
+            </tr>
+            <tr>
+                <td>薪水:</td>
+                <td><input type="text" name="salary" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="保存员工信息" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <br />
+    <a href="ViewServlet">查看员工信息列表</a>
+</body>
+</html>
